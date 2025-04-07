@@ -1,17 +1,7 @@
-buildscript {
-    repositories {
-        google()
-        jcenter()
-    }
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
 }
-
-repositories {
-    google()
-    jcenter()
-}
-
-apply plugin: 'com.android.application'
-
 android {
     compileSdkVersion 35
     namespace "com.github.barteksc.sample"
@@ -22,8 +12,8 @@ android {
         versionName "3.0.0"
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_19
-        targetCompatibility JavaVersion.VERSION_19
+        sourceCompatibility JavaVersion.VERSION_22
+        targetCompatibility JavaVersion.VERSION_22
     }
 }
 

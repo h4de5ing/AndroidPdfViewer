@@ -97,7 +97,6 @@ public class PDFViewActivity extends AppCompatActivity implements OnPageChangeLi
         try {
             startActivityForResult(intent, REQUEST_CODE);
         } catch (ActivityNotFoundException e) {
-            //alert user that file manager not working
             Toast.makeText(this, R.string.toast_pick_file_error, Toast.LENGTH_SHORT).show();
         }
     }
